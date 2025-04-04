@@ -9,6 +9,13 @@ import Banner from "./components/banner";
 function App() {
   return (
     <>
+    <Menu/>
+    <Banner/>
+    <Habitaciones/>
+    <About/>
+    <Ours/>
+    <Contacto/>
+    <Footer/>
     </>
   )
 }

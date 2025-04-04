@@ -11,10 +11,13 @@ function App() {
     <>
     <Menu/>
     <Banner/>
+    <div className="w3-content" style={{"maxWidth":"1532px"}}>
     <Habitaciones/>
     <About/>
     <Ours/>
     <Contacto/>
+    </div>
+
     <Footer/>
     </>
   )

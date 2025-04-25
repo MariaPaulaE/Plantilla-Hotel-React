@@ -1,24 +1,21 @@
-import Menu from "./components/menu";
-import Contacto from "./components/contacto";
-import About from "./components/about";
-import Ours from "./components/ours";
-import Habitaciones from "./components/habitaciones";
-import Footer from "./components/footer";
-import Banner from "./components/banner";
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Rooms from "./pages/Rooms"
+import Contact from "./pages/Contact"
+import NotFoud from "./pages/NotFoud"
+
 
 function App() {
   return (
     <>
-    <Menu/>
-    <Banner/>
-    <div className="w3-content" style={{"maxWidth":"1532px"}}>
-    <Habitaciones/>
-    <About/>
-    <Ours/>
-    <Contacto/>
-    </div>
-
-    <Footer/>
+      <Routes>
+        <Route path="/" element={ <Home />}/>
+        <Route path="/About" element={ <About />} />
+        <Route path="/Rooms" element={ <Rooms />} />
+        <Route path="/Contact" element={ <Contact />} />
+        <Route path="*" element={ <NotFoud/>}/>
+      </Routes>
     </>
   )
 }
